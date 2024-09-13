@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(50, 51, 54);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}
+
+
+.div-Home  {
+    margin: 0;   
+    font-size: 14px;   
+    color: #333;  
+    margin-right: 20px;    
+    position: absolute;  
+    top: 20px;  
+    right: 20px;   
+    background-color: #fff;   
+    border: none;  
+    border-radius: 25px; 
+    display:flex;   
+    padding: 10px 25px;  
+    align-items: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   
+}
+
+.div-Home :hover {
+    transform: translateY(-5px ); 
+    background-color: #f0f0f0;  
+    border-color: #ccc;  
+    color: #000;  
+    
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-form h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:51px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

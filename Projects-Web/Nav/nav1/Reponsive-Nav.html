@@ -1,0 +1,139 @@
+<!-- https://youtu.be/U8smiWQ8Seg?si=-LANXr0ESZmf9CW_ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+        margin: 0;
+        padding: 0;
+    }
+
+body{
+        min-height: 100vh;
+        background-image: url("images\\p8.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+nav{
+        background-color: #ffff;
+        box-shadow: 3px 3px 5px rgb(43, 43, 43);
+    }
+
+nav ul{list-style: none;
+        width: 100%; 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+nav li{
+    height: 50px;  
+}
+
+nav a{
+    height: 100%;
+    padding: 0px 30px ;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    background-color: rgb(197, 197, 197); 
+    color: rgb(255, 255, 255);
+}
+
+nav   .Logo{
+    margin-right: auto; 
+    padding: 0px 30px ;  
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0 ;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:#ffffff6c;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 0 10px rgb(82, 82, 82);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+} 
+
+.sidebar{
+    width: 100%;
+}
+
+.btn-menu{
+    display: none;
+}
+
+@media (max-width:800px ) {
+    .hideonMobile{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+}
+
+@media (max-width : 400px ) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+</style>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a href="javascript:void(0);" style="color:black;"><svg xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li ><a href="">GooCode</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">login</a></li> 
+
+        </ul>
+
+        <ul>
+            <span class="Logo"> GooCode</span>
+            <li><a href="" class="hideonMobile">Blog</a></li>
+            <li><a href="" class="hideonMobile">Product</a></li>
+            <li><a href="" class="hideonMobile">About</a></li>
+            <li><a href="" class="hideonMobile">login</a></li>
+            <li class="btn-menu" onclick = showSideBar() ><a href="javascript:void(0);"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+<script>
+function showSideBar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = 'flex' ;
+}
+function hideSideBar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = 'none' ;
+}
+</script>
+</body>
+</html>

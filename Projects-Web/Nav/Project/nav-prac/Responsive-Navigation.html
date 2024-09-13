@@ -1,0 +1,280 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moppile-Web</title>
+</head>
+<style>
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(26, 26, 26); 
+} 
+
+li{
+    list-style: none; 
+    height: 50px;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+}
+nav li{
+    height: 50px;  
+}
+
+nav a{
+    height: 100%;
+    padding: 0px 30px ;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+nav .links:hover{
+    background-color: gray;
+}
+
+nav .logo{   
+    cursor: pointer;
+    margin-right: auto;  
+    padding: 0px 30px ;   
+}
+.sidebar{ 
+    position: fixed;
+    height: 100vh;
+    width: 255px;  
+    top: 0;
+    right: 0;
+    justify-content:flex-start ;
+    align-items: flex-start; 
+    background-color:#ffffff33;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 0 10px rgb(192, 190, 190); 
+    flex-direction: column; 
+} 
+.sidebar li{
+    width: 100%; 
+}
+</style>
+<body> 
+
+    <nav>
+        <ul class="sidebar"> 
+            <li><a href="" class="links"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> 
+            <li><a href="" class="links">Contact</a></li>
+            <li><a href="" class="links">Shop</a></li>
+            <li><a href="" class="links">Products</a></li>
+        </ul>
+
+        <ul>
+            <li class="logo"> <a>GooCode</a>  </li>
+            <li><a href="" class="links">Contact</a></li>
+            <li><a href="" class="links">Shop</a></li>
+            <li><a href="" class="links">Products</a></li>
+            <li><a href="" class="links"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+        </ul>
+    </nav>
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar-Prof</title>
+</head>
+<style>
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+nav{  
+    background-color: rgb(27, 99, 255); 
+    padding:  0px 25px ;
+}
+nav a{
+    text-decoration: none;
+    color: #ffff;
+    height: 100%;  
+    align-items: center; 
+    display: flex;
+    padding: 0px 30px ;
+    translate: 4px ;  
+}
+nav a:hover{
+    background-color: rgb(85, 132, 173); 
+    transform: translate(2px);
+
+}
+nav li{
+    list-style: none;
+    height: 50px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 25px;
+}
+.logo{ 
+    margin-right: auto;
+    justify-content: center; 
+    padding: 0px 30px ;
+    display: flex;
+    align-items: center; 
+
+}
+
+nav .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 255px;
+    background-color: rgba(32, 32, 32, 0.589);
+    box-shadow: 1px 2px 3px  black; 
+    flex-direction: column; 
+    display: none   ;
+    backdrop-filter: blur(8px);
+    align-items: flex-start;
+    justify-content:flex-start;
+    
+}
+
+.sidebar li{
+    width: 100%;
+} 
+
+.sidebar{
+    width: 100%;
+}
+
+.btn-menu{
+    display: none;
+}
+
+@media (max-width:800px ) {
+    .repsonsiveToMobile{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+}
+
+@media (max-width : 400px ) {
+    .sidebar{
+        width: 100%;
+    } 
+}
+
+
+</style>
+<body>
+    
+    <nav> 
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a href="javascript:void(0);" style="color:black;"><svg xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sections</a></li>
+            <li><a href="#">Login</a></li>  
+        </ul>
+        <ul> 
+            <h2 class="logo">  GooCode  </h2>
+            <li><a href="#" class="repsonsiveToMobile" >Shop</a></li>
+            <li><a href="#" class="repsonsiveToMobile" >Contact Us</a></li>
+            <li><a href="#" class="repsonsiveToMobile" >Sections</a></li>
+            <li><a href="#" class="repsonsiveToMobile" >Login</a></li> 
+            <li class="btn-menu" style="color:black;" onclick = showSideBar() ><a class="links" href="javascript:void(0);"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <script> 
+        function showSideBar(){
+        const btn = document.querySelector(".sidebar"); 
+        btn.style.display = 'flex' 
+
+        }
+        function  hideSideBar(){
+            const btn = document.querySelector(".sidebar");
+                btn.style.display = 'none'
+            }
+            
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Landing Page - Goo Ahmed</title>
+</head>
+<body class="bg-gray-100">
+<header class="bg-blue-900 text-white p-4 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold">Goo Ahmed</a>
+    <button id="menu-button" class="md:hidden p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+    <div id="menu" class="hidden md:flex space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#portfolio" class="hover:underline">Portfolio</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+    </nav>
+</header>
+
+<section class="bg-blue-800 text-white h-screen flex items-center justify-center text-center">
+    <div>
+        <h1 class="text-5xl font-bold mb-4">Welcome to Goo Ahmed's Portfolio</h1>
+        <p class="text-xl mb-6">Explore my work and get to know more about my skills and services.</p>
+        <a href="#contact" class="bg-yellow-500 text-black py-2 px-6 rounded hover:bg-yellow-600">Get in Touch</a>
+    </div>
+</section>
+
+<main class="container mx-auto p-6">
+    <section id="about" class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">About Me</h2>
+        <p class="text-lg">I am Goo Ahmed, a passionate software engineer specializing in web development, UI/UX design, and more. My mission is to create impactful and efficient digital solutions.</p>
+    </section>
+
+    <section id="services" class="bg-white p-6 mb-12 shadow-md rounded">
+        <h2 class="text-4xl font-bold text-center mb-6">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-gray-100 p-6 rounded shadow-md">
+            <h3 class="text-2xl font-bold mb-3">Web Development</h3>
+            <p class="text-gray-700">Building responsive and high-performance websites tailored to your needs.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded shadow-md">
+            <h3 class="text-2xl font-bold mb-3">UI/UX Design</h3>
+            <p class="text-gray-700">Designing intuitive and user-friendly interfaces to enhance user experience.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded shadow-md">
+            <h3 class="text-2xl font-bold mb-3">Consulting</h3>
+            <p class="text-gray-700">Offering expert advice and strategies to optimize your digital presence.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="mb-12">
+        <h2 class="text-4xl font-bold text-center mb-6">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow-md">
+            <img src="images/Cust-Table.png" alt="Project 1" class="w-full h-48 object-cover mb-4 rounded">
+            <h3 class="text-xl font-bold mb-2">Table-Cutsomers</h3>
+            <p class="text-gray-700">A description of Project One, showcasing the key features and technologies used.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-md">
+            <img src="images/GameWeb.png" alt="Project 2" class="w-full h-48 object-cover mb-4 rounded">
+            <h3 class="text-xl font-bold mb-2">Project Two</h3>
+            <p class="text-gray-700">A description of Project Two, highlighting the main aspects and outcomes.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-md">
+        <img src="images/TravelWeb.png" alt="Project 3" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-xl font-bold mb-2">Project Three</h3>
+        <p class="text-gray-700">A description of Project Three, detailing the challenges and solutions provided.</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+    <form class="mx-auto max-w-md">
+        <input type="text" placeholder="Your Name" class="block w-full p-2 mb-4 border rounded">
+        <input type="email" placeholder="Your Email" class="block w-full p-2 mb-4 border rounded">
+        <textarea placeholder="Your Message" class="block w-full p-2 mb-4 border rounded"></textarea>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">Send</button>
+    </form>
+    </section>
+</main>
+
+<footer class="bg-blue-900 text-white text-center p-4">
+    <p>&copy; 2024 Goo Ahmed. All rights reserved.</p>
+    <div class="mt-4">
+    <a href="https://www.facebook.com/GooAhmed" class="text-white mx-2 hover:text-blue-500">Facebook</a>
+    <a href="https://www.instagram.com/GooAhmed" class="text-white mx-2 hover:text-pink-500">Instagram</a>
+    <a href="https://github.com/GooAhmed" class="text-white mx-2 hover:text-gray-400">GitHub</a>
+    </div>
+</footer>
+
+<script >
+    // Toggle mobile menu
+document.getElementById('menu-button').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+});
+emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const form = event.target;
+  const formData = new FormData(form);
+
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+    .then(function(response) {
+      alert('Your message has been sent successfully!');
+      form.reset(); // Reset form fields after successful submission
+    }, function(error) {
+      alert('Failed to send the message. Please try again later.');
+    });
+});
+</script>
+</body>
+</html>

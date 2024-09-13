@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+    
+    <header class="header">
+        <a class="logo" href=""><span>Goo</span>Ahmed</a>
+        
+    <nav>
+        <a href="" class="navBar" >Home</a>
+        <a href="" class="navBar" >About</a>
+        <a href="" class="navBar" >Gallery</a>
+        <a href="" class="navBar" >Services</a>
+        <a href="" class="navBar" >Contact</a> 
+
+        <i onclick= showSideBar() class ="icons"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></i> 
+    </nav>
+
+    <nav class="sidebar">
+        <i class="x" onclick= hidebar() ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></i>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Gallery</a>
+        <a href="">Services</a>
+        <a href="">Contact</a> 
+    </nav>
+    
+    </header>
+
+
+
+    <main>
+        <aside>
+
+        </aside>
+
+
+        <section>
+        
+        </section>
+
+
+        <article>
+        
+        </article>
+
+</main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="js\jquery-3.7.1.min.js"></script>
+    <script src="js\bootstrap.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script>
+        function hidebar(){
+        const hide = document.querySelector(".sidebar");
+        hide.style.display = 'none' ;        
+    }
+
+    function showSideBar(){
+        const hide = document.querySelector(".sidebar");
+        hide.style.display = 'flex' ;        
+    }
+    </script>
+<body>
+</html>

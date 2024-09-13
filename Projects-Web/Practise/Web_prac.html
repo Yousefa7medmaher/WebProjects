@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GooCode</title> 
+    <link  href=" Goooo.png" type="image/x-icon" rel="icon"> <!-- to make a small image in web page next name title -->
+</head>
+<style>
+    ::selection{
+        background-color: #2b2a2a;
+        color: white;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header { 
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    } 
+    header .logo-header{
+        padding: -50px;
+    }
+    header .myinp{
+        position: relative;
+        padding: 12px; 
+        border: none;
+        width: 350px;
+        outline: none;
+        height: 37px;
+        border-radius: 4px;
+
+    }
+    header .myinp , .mybtn { 
+        box-shadow:1px 1px 5px rgb(0, 0, 0);
+    }
+    header .myinp:hover{
+        background-color: #bebec2;
+    }
+    header .mybtn{
+        position: absolute; 
+        margin-left:285px ; 
+        border: none;
+        padding: 12px; 
+        background-color: #2b2a2a;
+        border-radius: 4px;
+        color: white;
+        height: 40px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 70px;
+        margin-right: 10px;
+    }
+    
+    .search-container { 
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .search-container button:hover {
+        background-color: #444;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        padding:11px;
+        border-radius:10px;
+    }
+
+    .nav-links a:hover {
+        background-color: #2b2a2a;
+    }
+    .navbar{
+        background-color: rgb(24, 23, 27);
+        height:20px;
+        border-radius: 0px 0px 10px 10px ;
+        box-shadow: 2px 2px 3px rgb(139, 139, 139);
+    }
+    aside{
+        width: 20%;
+        float: left;
+        padding: 10px;
+    }
+    section{
+        width: 40%;
+        float: left;
+        padding: 10px;
+    }
+    article{
+        width:40%;
+        float: left;
+        padding: 10px;
+    }
+footer{
+    text-align: center;
+    background-color: rgb(178, 178, 178);
+    padding: 25px;
+    clear: both;
+    display: block;
+}
+@media screen and (max-width:600px) {     
+        aside , section , article {
+            width: 100%;
+        }
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .drop-btn {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cce1e2;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-content a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #bebec2;
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.drop-btn:hover {
+    background-color: #000000;
+}
+
+.wats {
+    background-color: green;
+}
+
+.insta {
+    background-color: rgb(207, 26, 147);
+}
+
+.face {
+    background-color: rgb(54, 93, 224);
+}
+</style>
+<body>
+    <header>  
+        <div class="logo">
+            <img src="D:\MATERIALS\WebProgramming\Bro_Code\images\logo-not1.png" class="logo-header" alt="Logo">  
+        </div>
+        <div class="search-container">
+            <input type="text" class="myinp" placeholder="Search anything">
+            <button class="mybtn">Search</button>
+        </div>  
+        <div class="nav-links">
+            <a href="Videos.html" target="_blank">Videos</a>
+            <div class="dropdown">
+                <button class="drop-btn">Social Media</button>
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com" class="face"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="logo"> Facebook</a>
+                    <a href="https://www.instagram.com" class="insta"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo"> Instagram</a>
+                    <a href="https://www.whatsapp.com" class="wats"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="logo"> WhatsApp</a>
+                </div>
+            </div>
+            <a href="#">Icons</a>
+        </div>
+    </header>
+    
+<nav class="navbar"></nav>
+
+<main>
+    <aside ><h2>this is a side </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis illo ipsa rerum magni cupiditate exercitationem. Modi soluta tempore facilis quasi sed quis praesentium sint nam! Maiores repudiandae consectetur necessitatibus.</p></aside>
+    
+    <section><h2>this is a section </h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam voluptate enim odio laborum. Earum aut distinctio ipsam similique sunt pariatur vero? Quas quasi doloribus at cupiditate id inventore quia pariatur. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex repellat nostrum voluptas tenetur dicta expedita officiis repudiandae. Vel praesentium mollitia officia. Neque consectetur id sequi eveniet voluptatum. Non, voluptate!</p></section>
+    <article><h2>this is article </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magni itaque veritatis unde, odio maxime sint dolore fugiat natus aspernatur sequi, id aut omnis magnam? Iure, iste a. Pariatur, optio.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi fugit, exercitationem inventore animi qui libero! Tempora deleniti repudiandae doloremque animi quae. Fugiat exercitationem sequi culpa, ex quasi distinctio neque!</p>
+    </article>
+</main> 
+
+<footer>Footer</footer>
+</body>
+
+</html>
