@@ -44,7 +44,7 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 ## 👤 Author
 - **Name:** Yousef Ahmed Maher *(Goo Ahmed)*  
 - **Portfolio:** [GooAhmed](#) *(Replace with actual link)*  
-- **GitHub:** [github.com/yourusername](https://github.com/yourusername)  
+- **GitHub:** [github.com/yourusername](https://github.com/Yousefa7medmaher)  
 
 ## 📧 Contact
 Feel free to reach out for collaboration or any questions:
